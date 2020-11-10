@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football penalty shootout</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="team-logo" src="./Logo1.png" alt="Manchester">
+                <span class="team-name">Manchester United</span>
+                <div class="row round-goals" id="team-1-round-goals">
+                    <span class="col circle" id="Mt-1"></span>
+                    <span class="col circle" id="Mt-2"></span>
+                    <span class="col circle" id="Mt-3"></span>
+                    <span class="col circle" id="Mt-4"></span>
+                    <span class="col circle" id="Mt-5"></span>
+                    <span class="col circle" id="Mt-6"></span>
+                </div>
+            </div>
+            <div class="col-score">
+                <span class="score" id="team-1-goals">2</span>
+                <span class="score">-</span>
+                <span class="score" id="team-2-goals">3</span>
+            </div>
+            <div class="col">
+                <img class="team-logo" src="./Logo2.png" alt="FC Barcelona">
+                <span class="team-name">FC Barcelona</span>
+                <div class="row round-goals" id="team-2-round-goals">
+                    <span class="col circle" id="Bt-1"></span>
+                    <span class="col circle" id="Bt-2"></span>
+                    <span class="col circle" id="Bt-3"></span>
+                    <span class="col circle" id="Bt-4"></span>
+                    <span class="col circle" id="Bt-5"></span>
+                    <span class="col circle" id="Bt-6"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><button id="try-button" value="Reload Page" onClick="document.location.reload(true)">Try Again</button></div>
+            <div class="col"><button id="goal-button" onClick="handleGoalButton()">Shootout turn</button></div>
+         </div>
+         <div class="row">
+            <span class="result" id="final-result">Manchester United / FC Barcelona Wins</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
